@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+
+    <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+    <!-- <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" /> -->
+
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1,
+    target-densitydpi=device-dpi" />
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,700' rel='stylesheet' type='text/css'>
+
+    <title>Up &amp; Ready!</title>
+  </head>
+  <body>
+    <!-- <div class="app">
+      <h1>Apache Cordova</h1>
+      <div id="deviceready" class="blink">
+        <p class="event listening">Connecting to Device</p>
+        <p class="event received">Device is Ready</p>
+      </div>
+    </div> -->
+
+    <!-- Sign-up page layout
+  ================================================== -->
+    <div id="deviceready" class="container listening">
+
+      <div id="header" div class="sixteen columns">
+        <h1>Up App!</h1>
+        <hr />
+      </div>
+
+      <div id="aboutImage" div class="one-third column feature">
+        <img src="images/sun.png" alt="This is a plaeholder image">
+      </div>
+
+      <div class="one-third column feature">
+        <h3>Start your day right</h3>
+        <p>Up App helps you start your day with a simple display of your appointments for the day, your current local weather and an inspiring quote to start your day right.</p>
+      </div>
+
+      <div class="one-third column feature">
+        <h3>Sign-up</h3>
+        <p>Up App is currently compatible with Google Calendar. Please enter your Gmail address to get started. </p>
+        <form class="startform">
+          <label> Gmail Address:</label>
+          <input id="emailaddress" type="email" name="address" placeholder="username@gmail.com">
+          <input type="submit" value="Go">
+        </form>
+      </div>
+
+      <footer class="sixteen columns">
+        <p>Built with love, trial and error by Aisha Yusaf while learning front end web development.</p>
+        <p>Find me on:&nbsp;
+        <a href="https://twitter.com/new_nomad">
+          <i class="icon-twitter"></i> <span class="screen-reader">Twitter</span>
+        </a>
+        <a href="http://www.linkedin.com/in/aishayusaf">
+          <i class="icon-linkedin"></i> <span class="screen-reader">Twitter</span>
+        </a>
+        <a href="http://pakorabutty.tumblr.com/">
+          <i class="icon-tumblr"></i>
+        </a></p>
+      </footer>
+
+     </div><!-- container -->
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+    <script type="text/javascript" src="js/moment.min.js"></script>
+    <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
